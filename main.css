@@ -2,11 +2,63 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
 }
-.glyphicon{
-    font-size: 35px;
-}
+
 .navbar{
-    background-color: #3b5998;
+    background-color: #3B5898;
     overflow: hidden;
     height: 55px;
+}
+.glyphicon{
+    font-size: 30px;
+    color: #f4f4f4;
+}
+ul{
+    list-style: none;
+}
+.navbar a{
+    float: left;
+    color:#f4f4f4;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: #f4f4f4;
+    color: #3B5898; 
+}
+#side-menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+#side-menu a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+    display: block;
+}
+#side-menu a:hover{
+    color: white;
+}
+#side-menu .btn-close{
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    right: 20px;
+}
+#wrap-main{
+    transition:margin-left 0.5s;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
 }
